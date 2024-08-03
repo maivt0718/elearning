@@ -1,0 +1,1 @@
+Contains pages: Home, details, register/login

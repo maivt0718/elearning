@@ -1,0 +1,1 @@
+Containing the static information like pathname, validation
