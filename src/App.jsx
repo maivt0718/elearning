@@ -1,11 +1,11 @@
+import useRouteCustom from "./hooks/useRouteCustom"
 
 
 function App() {
+  const routes = useRouteCustom()
 
   return (
-    <div className="text-red-700">
-      hello
-    </div>
+    routes
   )
 }
 
