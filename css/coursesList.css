@@ -1,0 +1,18 @@
+.course_list {
+  width: 250px;
+  height: 100%;
+}
+.course_list:hover, .course_list:focus {
+  color: black !important;
+  border-color: black !important;
+}
+
+.ant-dropdown-menu-item {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.ant-dropdown-menu-item:hover {
+  background-color: rgb(208, 17, 176) !important;
+}/*# sourceMappingURL=coursesList.css.map */

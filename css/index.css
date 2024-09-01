@@ -1,0 +1,7 @@
+@import url(../src/scss/common.scss);
+@import url(../src/scss/Headers/headers.scss);
+@import url(../src/scss/Headers/coursesList.scss);
+@import url(../src/scss/Footer/footer.scss);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;/*# sourceMappingURL=index.css.map */

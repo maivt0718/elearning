@@ -1,45 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { UnorderedListOutlined } from "@ant-design/icons";
-import { Dropdown, Space } from "antd";
+import { Dropdown, Button, Space } from "antd";
 import { courses } from "../../services/courses.service";
 import { NavLink } from "react-router-dom";
-const items = [
-  {
-    label: "Submit and continue",
-    key: "1",
-  },
-];
 
 const CoursesList = () => {
-  const [courseList, setCourseList] = useState([]);
+  const [courseList, setCourseList] = useState([{}]);
 
-  courses
-    .listItems()
-    .then((res) => {
-      console.log(res)
-      {
-        res.data.forEach((item, index) => {
-          console.log()
-          // setCourseList([
-          //   ...courseList,
-          //   { label: <NavLink>{item.tenDanhMuc}</NavLink>, key: index },
-          // ]);
-        });
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-    console.log(courseList)
+  useEffect(() => {
+    courses
+      .listItems()
+      .then((res) => {
+        const newCourseList = res.data.map((item, index) => ({
+          label: <NavLink className="course_item">{item.tenDanhMuc}</NavLink>,
+          key: `${index}`,
+        }));
+        setCourseList(newCourseList);
+      })
+      .catch((err) => {});
+  }, []);
   return (
-    <Dropdown.Button
-      icon={<UnorderedListOutlined />}
-      menu={{
-        courseList,
-      }}
-    >
-      Courses
-    </Dropdown.Button>
+    <div>
+      <Dropdown menu={{ items: courseList
+      }} className="h-full my-0 py-0 text-black course_list">
+        <Button
+          className="flex justify-between courses_button"
+        >
+          <Space>Courses</Space>
+          <UnorderedListOutlined />
+        </Button>
+      </Dropdown>
+    </div>
   );
 };
 

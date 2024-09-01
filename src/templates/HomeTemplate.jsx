@@ -5,13 +5,16 @@ import Header from '../components/Header/Header'
 
 const HomeTemplate = () => {
   return (
-    <>
+    <div className="">
     <Header></Header>
-    <main>
-        <Outlet/>
+    <main className='h-screen'>
+  
+      <Outlet/>
+
+        
     </main>
     <Footer></Footer>
-    </>
+    </div>
   )
 }
 
