@@ -5,4 +5,10 @@
 }
 .header .header_content {
   height: 50px;
+}
+.header .header_content .header_button .navbar-toggler {
+  background-color: black;
+}
+.header .header_content .header_button .navbar-toggler .btn_dropdown {
+  color: white;
 }/*# sourceMappingURL=headers.css.map */

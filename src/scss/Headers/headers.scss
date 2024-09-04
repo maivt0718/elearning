@@ -1,10 +1,16 @@
-.header{
-    margin: 0;
-    padding: 5px;
-    background-color: rgb(238, 178, 233);
-    .header_content{
-        height: 50px;
-        .header_button{
+.header {
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(238, 178, 233);
+  .header_content {
+    height: 50px;
+    .header_button {
+      .navbar-toggler {
+        background-color: black;
+        .btn_dropdown {
+          color: white
         }
+      }
     }
+  }
 }

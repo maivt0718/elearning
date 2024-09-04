@@ -4,7 +4,7 @@ import { Dropdown, Button, Space } from "antd";
 import { courses } from "../../services/courses.service";
 import { NavLink } from "react-router-dom";
 
-const CoursesList = () => {
+const CoursesList = ({classNameWrapper = ""}) => {
   const [courseList, setCourseList] = useState([{}]);
 
   useEffect(() => {
@@ -21,11 +21,11 @@ const CoursesList = () => {
   }, []);
   return (
     <div>
-      <Dropdown menu={{ items: courseList
-      }} className="h-full my-0 py-0 text-black course_list">
-        <Button
-          className="flex justify-between courses_button"
-        >
+      <Dropdown
+        menu={{ items: courseList }}
+        className={`h-full my-0 py-0 text-black course_list ${classNameWrapper}`}
+      >
+        <Button className="flex justify-between">
           <Space>Courses</Space>
           <UnorderedListOutlined />
         </Button>
