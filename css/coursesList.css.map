@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/scss/Headers/coursesList.scss","coursesList.css"],"names":[],"mappings":"AAAA;EAME,YAAA;EACA,YAAA;ACJF;ADFE;EAEE,uBAAA;EACA,8BAAA;ACGJ;;ADGA;EACI,WAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;ACAJ;ADCI;EACI,8CAAA;ACCR","file":"coursesList.css"}
+{"version":3,"sources":["../src/scss/Headers/coursesList.scss","coursesList.css"],"names":[],"mappings":"AAAA;EAME,YAAA;EACA,WAAA;ACJF;ADFE;EAEE,uBAAA;EACA,8BAAA;ACGJ;ADCE;EARF;IASI,YAAA;ECEF;AACF;;ADCA;EACI,WAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;ACEJ;ADDI;EACI,8CAAA;ACGR","file":"coursesList.css"}

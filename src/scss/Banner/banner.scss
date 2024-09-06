@@ -1,0 +1,29 @@
+.elearning_banner{
+    overflow: hidden;
+    .container{
+        .banner_content{
+            .banner_left{
+                margin: auto 0;
+                .banner_title{
+                    font-size: 50px;
+                    font-weight: bold;
+                    margin: 20px auto;
+                }
+                .banner_btn{
+                    margin: 50px auto;
+                }
+            }
+            .banner_right{
+                @media (min-width: 1024px) {
+                    margin-left: 100px;
+                }
+                img{
+                    object-fit: cover;
+                    object-position: center;
+                    max-width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

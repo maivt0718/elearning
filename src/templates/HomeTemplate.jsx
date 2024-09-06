@@ -7,7 +7,7 @@ const HomeTemplate = () => {
   return (
     <div className="">
     <Header></Header>
-    <main className='h-screen'>
+    <main className=''>
   
       <Outlet/>
 

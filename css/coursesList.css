@@ -1,10 +1,15 @@
 .course_list {
-  width: 250px;
   height: 100%;
+  width: 100%;
 }
 .course_list:hover, .course_list:focus {
   color: black !important;
   border-color: black !important;
+}
+@media (min-width: 768px) {
+  .course_list {
+    width: 250px;
+  }
 }
 
 .ant-dropdown-menu-item {

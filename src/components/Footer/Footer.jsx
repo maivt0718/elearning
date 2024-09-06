@@ -1,6 +1,8 @@
 import React from "react";
 import LogoIcon from "../LogoIcon/LogoIcon";
 import { NavLink } from "react-router-dom";
+import useResponsive from "../../hooks/useResponsive";
+import { deviceWidth } from "../../common/deviceWidth.js";
 
 const Footer = () => {
   const listItems = [
@@ -49,15 +51,30 @@ const Footer = () => {
       ],
     },
   ];
+  const isResponsive = useResponsive(deviceWidth);
   return (
     <div className="footer">
       <div className="container">
-        <div className="flex footer_content">
-          <div className="footer_left w-1/4">
+        <div
+          className={`${
+            isResponsive.mobile || isResponsive.tablet ? "block" : "flex"
+          } footer_content`}
+        >
+          <div
+            className={`footer_left ${
+              isResponsive.mobile || isResponsive.tablet ? "w-full" : "w-1/4"
+            }`}
+          >
             <LogoIcon />
           </div>
           <div className="footer_right w-full">
-            <div className="grid grid-cols-4 justify-between">
+            <div
+              className={`grid ${
+                isResponsive.mobile || isResponsive.tablet
+                  ? "grid-cols-2"
+                  : "grid-cols-4"
+              } justify-between gap-10`}
+            >
               {listItems.map((element, index) => {
                 return (
                   <div key={index} className="footer_list">
@@ -76,20 +93,24 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer_copyright ">
-        <div className="container flex justify-between">
-          <div>
-            @2024{" "}
-            <a href="/" className="text-blue-700 text-center">
-              Udemy
-            </a>
-            . All rights reserved
-          </div>
-          <div className="footer_social flex space-x-3">
-            <p className="">Connect with us</p>
-            <i className="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-brands fa-instagram"></i>
+        <div className="container">
+          <div className={`${
+            isResponsive.mobile || isResponsive.tablet ? "block space-y-5 text-center" : "flex justify-between"
+          }  gap-10`}>
+            <div>
+              @2024{" "}
+              <a href="/" className="text-blue-700 text-center">
+                Udemy
+              </a>
+              . All rights reserved
+            </div>
+            <div className="footer_social flex space-x-3 justify-center">
+              <p className="">Connect with us</p>
+              <i className="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
           </div>
         </div>
       </div>

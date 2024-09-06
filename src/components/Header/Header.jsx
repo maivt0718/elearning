@@ -4,7 +4,6 @@ import CoursesList from "../CoursesList/CoursesList";
 import InputCustom from "../InputCustom/InputCustom";
 import ButtonCustom from "../ButtonCustom/ButtonCustom";
 import { Drawer } from "antd";
-import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [drawerVisible, setDrawerVisible] = useState(false)
@@ -20,7 +19,7 @@ const Header = () => {
     <div className="header">
       <div className="container">
         <div className="flex justify-between header_content">
-          <div className="flex space-x-5 w-3/4">
+          <div className="flex space-x-3 w-3/4">
             <LogoIcon></LogoIcon>
             <CoursesList className="my-0 py-0 min-h-full" classNameWrapper="hidden md:flex"></CoursesList>
             <form className="h-full w-10/12">
@@ -28,18 +27,18 @@ const Header = () => {
             </form>
           </div>
 
-          <div className="flex header_button space-x-2 ">
+          <div className="flex header_button space-x-2">
             <ButtonCustom
               content={"Log in"}
               textColor="text-black"
               bgColor="bg-pink-500"
-              classname="w-1/2 py-auto px-auto"
+              classname="w-1/2 py-auto px-2 hidden md:block text-center login_btn"
             />
             <ButtonCustom
               content={"Sign up"}
               textColor="text-black"
               bgColor="bg-green-500"
-              classname=" py-auto px-auto px-2"
+              classname="w-1/2 py-auto px-auto px-2 hidden md:block"
             />
             <ButtonCustom content={""} classname="navbar-toggler md:hidden" spanClassname="navbar-toggler-icon fa-solid fa-bars btn_dropdown" onClick={showDrawer}/>
           </div>

@@ -4,8 +4,11 @@
     color: black !important;
     border-color: black !important;
   }
-  width: 250px;
   height: 100%;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 250px;
+  }
 }
 
 .ant-dropdown-menu-item{

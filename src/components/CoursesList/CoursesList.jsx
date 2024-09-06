@@ -12,7 +12,7 @@ const CoursesList = ({classNameWrapper = ""}) => {
       .listItems()
       .then((res) => {
         const newCourseList = res.data.map((item, index) => ({
-          label: <NavLink className="course_item">{item.tenDanhMuc}</NavLink>,
+          label: <NavLink className="course_item_nav">{item.tenDanhMuc}</NavLink>,
           key: `${index}`,
         }));
         setCourseList(newCourseList);
