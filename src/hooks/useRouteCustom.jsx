@@ -19,7 +19,7 @@ const useRouteCustom = () => {
                     element: [<Banner/>, <NewCourses/>]
                 },
                 {
-                    path: `${path.courseDetails}`,
+                    path: `${path.courseDetails}/:slug`,
                     element: [<CourseDetails/>]
                 }
                 

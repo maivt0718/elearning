@@ -4,6 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 50px;
     &::before{
         position: absolute;
         background-color: rgba(0, 0, 0, 0.8);
@@ -15,18 +16,26 @@
     
     }
     .container{
-        margin: 0;
         z-index: 2;
         position: relative;
+        width: 100%;
         .courseDetails_intro{
             .container{
                 .intro{
                     .intro_text{
                         text-align: center;
+                        h1{
+                            font-size: 50px;
+                            font-weight: bold;
+                            color: rgb(12, 212, 49);
+                        }
                     }
                     .intro_image{
                         margin: auto;
+                        
                         img{
+                            background-color: aliceblue;
+                            overflow: hidden;
                             object-fit: cover;
                             object-position: center;
                             width: 250px;

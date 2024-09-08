@@ -6,5 +6,8 @@ export const courses = {
   },
   getListCourses: () =>{
     return http.get("QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01")
+  },
+  getCourseItem: (id) => {
+    return http.get(`QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${id}`)
   }
 };
