@@ -1,4 +1,5 @@
 export const path = {
     homePage: "/",
-    PageNotFound: "*"
+    PageNotFound: "*",
+    courseDetails: "/course_detail"
 }

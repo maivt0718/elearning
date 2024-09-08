@@ -16,7 +16,7 @@ const NewCourses = () => {
         <div className='container'>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-5 col:grid-cols-1 sm:grid-cols-1'>
                 {newCourses.map((item, index) => {
-                    return <CoursesListItem image={item.hinhAnh} name={item.tenKhoaHoc} desciption={item.moTa} numberOfSeen={item.luotXem} creation_date={item.ngayTao}/>
+                    return <CoursesListItem image={item.hinhAnh} name={item.tenKhoaHoc} numberOfStudent={item.soLuongHocVien} numberOfSeen={item.luotXem} creation_date={item.ngayTao}/>
                 })}
             </div>
         </div>

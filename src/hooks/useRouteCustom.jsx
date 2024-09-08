@@ -6,6 +6,7 @@ import PageNotFound from '../components/PageNotFound/PageNotFound'
 import Banner from '../components/Banner/Banner'
 import CoursesListItem from '../components/CoursesList/CoursesListItem'
 import NewCourses from '../components/CoursesList/NewCourses'
+import CourseDetails from '../components/CourseDetails/CourseDetails'
 
 const useRouteCustom = () => {
     const routes = useRoutes([
@@ -14,10 +15,13 @@ const useRouteCustom = () => {
             element: <HomeTemplate/>,
             children:[
                 {
-                    path: "/",
+                    path: `${path.homePage}`,
                     element: [<Banner/>, <NewCourses/>]
                 },
-                
+                {
+                    path: `${path.courseDetails}`,
+                    element: [<CourseDetails/>]
+                }
                 
             ]
            
