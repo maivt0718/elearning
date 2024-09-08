@@ -3,6 +3,7 @@ import { Rate } from "antd";
 import React from "react";
 import { getStar } from "../GetStar/GetStar.jsx";
 import ButtonCustom from "../ButtonCustom/ButtonCustom";
+import { useNavigate } from "react-router-dom";
 
 const CoursesListItem = ({
   image,
@@ -12,7 +13,10 @@ const CoursesListItem = ({
   numberOfStar = "0.5",
   creation_date,
 }) => {
-
+  const navigation = useNavigate()
+  const courseDetails = () =>{
+    navigation("/course_detail")
+  }
   return (
     <div className="course_item">
       <div className="container space-y-4">
@@ -40,6 +44,7 @@ const CoursesListItem = ({
           classname={"float-end p-2"}
           textColor={"text-black"}
           bgColor={"bg-pink-500"}
+          onClick={courseDetails}
         />
       </div>
     </div>
