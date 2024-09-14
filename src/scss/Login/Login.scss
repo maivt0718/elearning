@@ -1,0 +1,15 @@
+.login_page{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .login_content{
+            .login_logo{}
+            .login_info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}

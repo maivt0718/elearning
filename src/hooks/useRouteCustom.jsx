@@ -7,6 +7,7 @@ import Banner from '../components/Banner/Banner'
 import CoursesListItem from '../components/CoursesList/CoursesListItem'
 import NewCourses from '../components/CoursesList/NewCourses'
 import CourseDetails from '../components/CourseDetails/CourseDetails'
+import Login from '../components/Login/Login'
 
 const useRouteCustom = () => {
     const routes = useRoutes([
@@ -25,6 +26,10 @@ const useRouteCustom = () => {
                 
             ]
            
+        },
+        {
+            path: `${path.logIn}`,
+            element: <Login/>
         },
         {
             path: `${path.PageNotFound}`,

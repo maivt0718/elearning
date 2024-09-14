@@ -4,13 +4,13 @@ const ButtonCustom = ({
   content,
   type = "button",
   bgColor = "bg-blue-500",
-  onClick,
+  onclick,
   textColor = "text-white",
   classname = "",
   spanClassname = "",
 }) => {
   return (
-    <button type={type} className={`${textColor} ${bgColor} rounded h-full ${classname} text-center`} onClick={onClick}>
+    <button type={type} className={`${textColor} ${bgColor} rounded ${classname} text-center`} onClick={onclick}>
       {content}
     {spanClassname? <span className= {spanClassname}></span>: null}
     </button>

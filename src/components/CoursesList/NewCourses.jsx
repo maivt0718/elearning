@@ -4,9 +4,13 @@ import { courses } from '../../services/courses.service'
 
 const NewCourses = () => {
     const [newCourses, setnewCourses] = useState([])
+    const randomNumber = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
     useEffect(() => {
         courses.getListCourses().then((res)=>{
-            const tempNewCourses = res.data.filter(item => item.maKhoaHoc).slice(0,8)
+            const random = randomNumber(0, 80)
+            const tempNewCourses = res.data.filter(item => item.maKhoaHoc).slice(random, random+8)
         
             setnewCourses(tempNewCourses)
         }).catch((err) => {console.error(err);})
