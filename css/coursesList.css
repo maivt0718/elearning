@@ -1,6 +1,5 @@
 .course_list {
   height: 100%;
-  width: 100%;
 }
 .course_list:hover, .course_list:focus {
   color: black !important;
@@ -13,8 +12,6 @@
 }
 
 .ant-dropdown-menu-item {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
 }

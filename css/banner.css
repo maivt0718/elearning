@@ -1,3 +1,9 @@
+.elearning_banner {
+  overflow: hidden;
+}
+.elearning_banner .container .banner_content .banner_left {
+  margin: auto 0;
+}
 .elearning_banner .container .banner_content .banner_left .banner_title {
   font-size: 50px;
   font-weight: bold;
@@ -5,4 +11,17 @@
 }
 .elearning_banner .container .banner_content .banner_left .banner_btn {
   margin: 50px auto;
+}
+@media (min-width: 1024px) {
+  .elearning_banner .container .banner_content .banner_right {
+    margin-left: 100px;
+  }
+}
+.elearning_banner .container .banner_content .banner_right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=banner.css.map */

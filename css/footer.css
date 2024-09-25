@@ -5,8 +5,11 @@
   height: 100%;
   background-color: rgb(247, 187, 247);
 }
+.footer .footer_content .footer_left {
+  margin: 50px auto;
+}
 .footer .footer_content .footer_right .footer_list {
-  margin: 0 30px;
+  margin: 0;
 }
 .footer .footer_content .footer_right .footer_list h1 {
   font-weight: bold;

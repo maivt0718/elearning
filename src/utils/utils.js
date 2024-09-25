@@ -7,3 +7,7 @@ export const getLS = (key) => {
     return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)) : null
 }
 
+export const removeLS = (key) => {
+    localStorage.removeItem(key) 
+}
+

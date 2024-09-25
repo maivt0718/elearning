@@ -17,11 +17,11 @@ const useRouteCustom = () => {
             children:[
                 {
                     path: `${path.homePage}`,
-                    element: [<Banner/>, <NewCourses/>]
+                    element: [<Banner key={"banner"}/>, <NewCourses key={"new_courses"}/>]
                 },
                 {
                     path: `${path.courseDetails}/:slug`,
-                    element: [<CourseDetails/>]
+                    element: [<CourseDetails key={"course_details"}/>]
                 }
                 
             ]

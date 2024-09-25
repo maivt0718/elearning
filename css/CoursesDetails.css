@@ -1,0 +1,43 @@
+.courseDetails {
+  position: relative;
+  background-image: url("https://elearning-cybersoft.vercel.app/images/courses-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+.courseDetails::before {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.courseDetails .container {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+.courseDetails .container .courseDetails_intro .container .intro .intro_text {
+  text-align: center;
+  width: 100%;
+}
+.courseDetails .container .courseDetails_intro .container .intro .intro_text h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(12, 212, 49);
+}
+.courseDetails .container .courseDetails_intro .container .intro .intro_image {
+  margin: auto;
+}
+.courseDetails .container .courseDetails_intro .container .intro .intro_image img {
+  background-color: aliceblue;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 250px;
+}/*# sourceMappingURL=CoursesDetails.css.map */

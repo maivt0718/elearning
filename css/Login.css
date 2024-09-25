@@ -1,0 +1,10 @@
+.login_page .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login_page .container .login_content .login_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=Login.css.map */

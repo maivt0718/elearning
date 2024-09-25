@@ -3,6 +3,9 @@
 @import url(../src/scss/Headers/coursesList.scss);
 @import url(../src/scss/Footer/footer.scss);
 @import url(../src/scss/Banner/banner.scss);
+@import url(../src/scss/CoursesList/coursesItems.scss);
+@import url(../src/scss/CoursesDetails/CoursesDetails.scss);
+@import url(../src/scss/Login/Login.scss);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;/*# sourceMappingURL=index.css.map */

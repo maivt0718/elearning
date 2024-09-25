@@ -82,7 +82,7 @@ const Footer = () => {
 
                     <div className="flex flex-col space-y-5 items">
                       {element.items.map((items, index) => {
-                        return items;
+                        return <div key={index}>{items}</div>;
                       })}
                     </div>
                   </div>
@@ -107,9 +107,9 @@ const Footer = () => {
             <div className="footer_social flex space-x-3 justify-center">
               <p className="">Connect with us</p>
               <i className="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-regular fa-envelope"></i>
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-twitter"></i>
+              <i className="fa-regular fa-envelope"></i>
+              <i className="fa-brands fa-instagram"></i>
             </div>
           </div>
         </div>
