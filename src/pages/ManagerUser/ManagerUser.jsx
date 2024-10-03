@@ -16,7 +16,7 @@ const ManagerUser = () => {
         title: "Avarta",
         dataIndex: "avatar",
         key: "avarta",
-        render: (text) => <img src={text ? text : `http://fiverrnew.cybersoft.edu.vn/avatar/30-09-2024-10-44-26-1.png`} className='h-10 w-10'/>,
+        render: (text) => <img src={text ? text : `https://th.bing.com/th/id/OIP.awAiMS1BCAQ2xS2lcdXGlwHaHH?rs=1&pid=ImgDetMain`} className='h-10 w-10'/>,
       },
     {
       title: "ID",

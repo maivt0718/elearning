@@ -21,7 +21,7 @@ const AdminTemplate = () => {
   return (
     <div>
       {userInfo && userInfo.role == `ADMIN` ? (
-        <Layout className="h-screen">
+        <Layout className="min-h-screen">
           <Sider trigger={null} collapsible collapsed={collapsed}>
             <div className="demo-logo-vertical" />
             <Menu
