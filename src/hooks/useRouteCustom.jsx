@@ -7,7 +7,11 @@ import Banner from '../components/Banner/Banner'
 import CoursesListItem from '../components/CoursesList/CoursesListItem'
 import NewCourses from '../components/CoursesList/NewCourses'
 import CourseDetails from '../components/CourseDetails/CourseDetails'
-import Login from '../components/Login/Login'
+import AdminTemplate from '../templates/AdminTemplate/AdminTemplate'
+import UserDetails from '../components/UserDetails/UserDetails'
+import Login from '../pages/Login/Login'
+import AdminLogin from '../pages/AdminLogin/AdminLogin'
+import ManagerUser from '../pages/ManagerUser/ManagerUser'
 
 const useRouteCustom = () => {
     const routes = useRoutes([
@@ -22,6 +26,10 @@ const useRouteCustom = () => {
                 {
                     path: `${path.courseDetails}/:slug`,
                     element: [<CourseDetails key={"course_details"}/>]
+                },
+                {
+                    path: `${path.user}`,
+                    element: <UserDetails/>
                 }
                 
             ]
@@ -32,9 +40,24 @@ const useRouteCustom = () => {
             element: <Login/>
         },
         {
+            path: `${path.admin}`,
+            element: <AdminTemplate/>,
+            children:[
+                {
+                    index:true,
+                    element: <ManagerUser/>
+                }
+            ]
+        },
+        {
             path: `${path.PageNotFound}`,
             element: <PageNotFound/>
-        }
+        },
+        ,
+        {
+            path: `${path.admin_login}`,
+            element: <AdminLogin/>
+        },
     ])
 
   return routes

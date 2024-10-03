@@ -3,5 +3,9 @@ export const path = {
     PageNotFound: "*",
     courseDetails: "/course_detail",
     logIn: "/login",
-    signUp: "/signUp"
+    signUp: "/signUp",
+    user: "/userDetail",
+    admin: "/admin",
+    admin_login: "/admin_login",
+    managerUser: `/manager_user`,
 }

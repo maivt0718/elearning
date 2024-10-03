@@ -1,17 +1,16 @@
 import { useLottie } from "lottie-react";
 import React, { useContext, useState } from "react";
 import login from "../../../src/assets/Login/login.json";
-import InputCustom from "../InputCustom/InputCustom";
-import ButtonCustom from "../ButtonCustom/ButtonCustom";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import { auth } from "../../services/config";
-import { users } from "../../services/auth.service";
 import { setLS } from "../../utils/utils";
 import { NotificationContext } from "../../App";
 import { useDispatch } from "react-redux";
 import { setInfo } from "../../redux/authSlice";
+import InputCustom from "../../components/InputCustom/InputCustom";
+import ButtonCustom from "../../components/ButtonCustom/ButtonCustom";
+import { users } from "../../services/auth.service";
 
 const Login = () => {
   const {showNotification} = useContext(NotificationContext)
